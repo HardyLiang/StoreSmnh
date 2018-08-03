@@ -1,0 +1,66 @@
+<view class='head-bg'>
+  <!-- <image src="../../../images/head_bg.jpg" mode="aspectFill" class='head-bg-img'></image> -->
+  <view class='back-bg'></view>
+  <view class='user-header'>
+    <image class="" src="../../../images/img_main_auto_0.png" mode="aspectFill" />
+  </view>
+  <text class='user-name'>我是昵称</text>
+</view>
+<view class='order-container'>
+  <view class='order-item'>
+    <view class='order-ico1'></view>
+    <text>待付款</text>
+  </view>
+  <view class='order-item'>
+    <view class='order-ico2'></view>
+    <text>待发货</text>
+  </view>
+  <view class='order-item'>
+    <view class='order-ico3'></view>
+    <text>待收货</text>
+  </view>
+  <view class='order-item'>
+    <view class='order-ico4'></view>
+    <text>待评价</text>
+  </view>
+  <view class='order-item border-left'>
+    <view class='order-ico5'></view>
+    <text>我的订单</text>
+  </view>
+</view>
+<view class='m-wrap-container'>
+  <!-- 菜单 -->
+ 
+    <view class='user-list-item'>
+     <navigator url="../operation_guide/operation_guide">
+      <view class='user-item-c user-item1'></view>
+      <text>优惠券</text>
+        </navigator>
+    </view>
+    <view class='user-list-item'>
+     <navigator url="../operation_guide/operation_guide">
+      <view class='user-item-c user-item2'></view>
+      <text>退货管理</text>
+        </navigator>
+    </view>
+    <view class='user-list-item'>
+     <navigator url="../operation_guide/operation_guide">
+      <view class='user-item-c user-item3'></view>
+      <text>地址管理</text>
+        </navigator>
+    </view>
+    <view class='user-list-item'>
+     <navigator url="../operation_guide/operation_guide">
+      <view class='user-item-c user-item4'></view>
+      <text>账户安全</text>
+        </navigator>
+    </view>
+    <view class='user-list-item'>
+     <navigator url="../operation_guide/operation_guide">
+      <view class='user-item-c user-item5'></view>
+      <text>服务中心</text>
+        </navigator>
+    </view>
+
+</view>
+<view class='quit-btn'>退出登录</view>

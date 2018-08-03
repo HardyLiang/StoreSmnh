@@ -1,0 +1,87 @@
+<view class="container carts-list">
+ <!-- 一个店铺start -->
+  <view class='cart-list-container'>
+    <!-- <view class='cart-store'>
+      <checkbox value='' ></checkbox><text>实名农户自营</text> </view> -->
+    <!-- 商品列表start -->
+    <view class="carts-container">
+      <view class="carts-item">
+        <!-- 复选框图标 -->
+        <checkbox value='' class='check-style'></checkbox>
+        <view>
+          <!-- 缩略图 -->
+          <image class="carts-image" src="../../images/img_main_auto_0.png" mode="aspectFill" />
+        </view>
+        <view class="carts-text">
+          <!-- 商品标题 -->
+          <text class="carts-title">这个是标题文字名称</text>
+          <view class="carts-subtitle">
+            <!-- 价格 -->
+            <text class="carts-price">597.8</text>
+            <!-- 数量加减 -->
+            <view>
+              <view class="stepper">
+                <!-- 减号 -->
+                <text class="{{minusStatuses[index]}}" data-index="{{index}}" catchtap="bindMinus">-</text>
+                <!-- 数值 -->
+                <input type="number" data-index="{{index}}" catchchange="bindManual" catchtap="bindManualTapped" value="{{item.quantity}}" />
+                <!-- 加号 -->
+                <text class="normal" data-index="{{index}}" catchtap="bindPlus">+</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <button type="warn" class="delete-button" catchtap="delete">删除</button>
+    </view>
+     <!-- 商品列表start -->
+    <view class="carts-container">
+      <view class="carts-item">
+        <!-- 复选框图标 -->
+        <checkbox value='' class='check-style'></checkbox>
+        <view>
+          <!-- 缩略图 -->
+          <image class="carts-image" src="../../images/img_main_auto_0.png" mode="aspectFill" />
+        </view>
+        <view class="carts-text">
+          <!-- 商品标题 -->
+          <text class="carts-title">这个是标题文字名称这个是标题文字名称这个是标题文字名称</text>
+          <view class="carts-subtitle">
+            <!-- 价格 -->
+            <text class="carts-price">597.8</text>
+            <!-- 数量加减 -->
+            <view>
+              <view class="stepper">
+                <!-- 减号 -->
+                <text class="{{minusStatuses[index]}}" data-index="{{index}}" catchtap="bindMinus">-</text>
+                <!-- 数值 -->
+                <input type="number" data-index="{{index}}" catchchange="bindManual" catchtap="bindManualTapped" value="{{item.quantity}}" />
+                <!-- 加号 -->
+                <text class="normal" data-index="{{index}}" catchtap="bindPlus">+</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <button type="warn" class="delete-button" catchtap="delete">删除</button>
+    </view>
+    <!-- end -->
+  </view>
+  <!-- 一个店铺end -->
+  
+</view>
+<view class='cart-none'>
+   <image src="../../images/img_main_auto_0.png"></image>
+   <text>购物车空空如也</text>
+   <text>{{skinTheme}}</text>
+</view>
+
+
+<view class="carts-footer">
+  <view class="select-and-amount" bindtap="bindSelectAll">
+    <checkbox value=''></checkbox>
+    <text>全选</text>
+    <text class='total-money'>100</text>
+  </view>
+  <view class="button" bindtap="bindCheckout">立即结算</view>
+</view>
