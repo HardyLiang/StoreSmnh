@@ -1,0 +1,14 @@
+<view class='sm-wrap-item'>
+  <navigator>
+    <view class='sm-wrap-img' style='height:{{imgHeight}}px'>
+      <image src="../../images/img_main_auto_0.png"></image>
+    </view>
+    <text class='sm-wrap-title text-twoLine'>这里是文字标题名称这里是文字标题名称这里是文字标题名称</text>
+    <view class='sm-sumary'>
+      <view class='sm-price'>
+        <text>￥</text>59.00</view>
+      <view class='sm-sign'>满减</view>
+      <view class='sm-sign'>礼</view>
+    </view>
+  </navigator>
+</view>

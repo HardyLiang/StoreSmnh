@@ -105,24 +105,22 @@
 .sm-wrap-list {
   padding: 0 25rpx;
   margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: space-around;
+  display: inline-block;
+  /* align-content: center;
+  justify-content: space-around; */
 }
 
-.sm-wrap-item {
-  width: 49%;
-  position: relative;
+.sm-wrap-list .sm-wrap-item {
+  display: block;
+  float: left;
+  width: 50%;
+   position: relative;
   border-radius: 5px;
   background: #fff;
   box-shadow: 0 3px 15px #ddd;
-  overflow: hidden;
+  overflow: hidden; 
 }
-.sm-wrap-item{
-  
-}
+
 
 .sm-wrap-img {
   width: 100%;

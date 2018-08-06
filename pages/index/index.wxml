@@ -2,11 +2,11 @@
 <view class='head-background'>
    <view class='sm-store-content'>
     <view class='sm-store-head'>
-      <image src='../../images/head.jpg' mode="aspectFill"></image>
+      <image src='{{storeUrl}}' mode="aspectFill"></image>
     </view>
     <view class='sm-store-info'>
-      <text class='sm-store-name'>怡家店铺</text>
-      <text class='sm-store-intr'>里面的东西绝对是好货~~不好欢迎退货</text>
+      <text class='sm-store-name'>{{storeName}}</text>
+      <text class='sm-store-intr'>{{storeContent}}</text>
     </view>
     <view class='sm-search'></view>
   </view>
@@ -14,7 +14,7 @@
      <image src="" class="sm-banner-image"  />
   </view>
 </view>
-<view class='m-home-container'>
+<view class='m-home-container' hiddle="{{isHideCoupons}}">
   <view></view>
     <scroll-view class="scroll-view_H" scroll-x="true" bindscroll="scroll" >
           <view id="demo1" class="scroll-view-item">
@@ -27,34 +27,23 @@
         </scroll-view>
 </view>
   <view class='sm-like'>
-    <view class='sm-like-title'>猜你喜欢</view>
-    <view class='sm-wrap-list'>
+    <view class='sm-like-title'>{{}}</view>
+    <view class='sm-wrap-list' wx:for="{{hotGoodsList}}" wx:key="item"
+    wx:index="index">
       <view class='sm-wrap-item'>
         <navigator>
           <view class='sm-wrap-img' style='height:{{imgHeight}}px'>
-            <image src="../../images/img_main_auto_0.png"></image>
+            <image src="{{item.goods_main_photo}}"></image>
           </view>
-          <text class='sm-wrap-title text-twoLine'>这里是文字标题名称这里是文字标题名称这里是文字标题名称</text>
+          <text class='sm-wrap-title text-twoLine'>{{item.goods_name}}</text>
           <view class='sm-sumary'>
             <view class='sm-price'>
-              <text>￥</text>59.00</view>
+              <text>￥</text>{{item.goods_current_price}}</view>
             <!-- <view class='sm-sale'>已售459件</view> -->
             <view class='sm-sign'>满减</view>
             <view class='sm-sign'>礼</view>
           </view>
         </navigator>
-      </view>
-      <view class='sm-wrap-item'>
-        <view class='sm-wrap-img'>
-          <image src="../../images/img_main_auto_0.png"></image>
-        </view>
-        <text class='sm-wrap-title text-twoLine'>这里是文字标题名称</text>
-        <view class='sm-sumary'>
-          <view class='sm-price'>
-            <text>￥</text>59.00</view>
-          <!-- <view class='sm-sale'>已售459件</view> -->
-          <view class='sm-sign'>满</view>
-        </view>
       </view>
     </view>
   </view>

@@ -1,4 +1,8 @@
 //app.js
+var http = require('utils/reques.js')
+var common = require('utils/common.js')
+var urlSet = require('utils/urlSet.js')
+var util = require('utils/util.js')
 App({
   onLaunch: function () {
     var that = this;
@@ -46,6 +50,9 @@ App({
   globalData: {
     userInfo: null,
     skinTheme: ''
+  },
+  func: {
+    indexStore: http.indexStore,  
   }
   
 })
