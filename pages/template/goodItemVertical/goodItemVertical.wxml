@@ -1,3 +1,4 @@
+<template name="goodItemVertical">
 <view class='sm-wrap-item'>
   <navigator>
     <view class='sm-wrap-img' style='height:{{imgHeight}}px'>
@@ -12,3 +13,4 @@
     </view>
   </navigator>
 </view>
+</template>

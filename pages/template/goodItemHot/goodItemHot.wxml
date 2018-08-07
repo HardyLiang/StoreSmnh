@@ -1,0 +1,14 @@
+<template name="hotProductTemplate">
+  <view class='hot-item'>
+    <view class='hot-sign'>热卖产品</view>
+    <view class='hot-left'>
+      <image src='../../images/head.jpg' class='hot-img'></image>
+    </view>
+    <view class='hot-right'>
+      <view class='hot-rig-name text-twoLine'>这里是标题这里是标题这里是标题这里是标题这里是标题这里是标题这里是标题</view>
+      <text class='hot-new-price'>99.9</text>
+      <text class='hot-old-price'>199</text>
+      <view class='m-add-cart'>购</view>
+    </view>
+  </view>
+</template>

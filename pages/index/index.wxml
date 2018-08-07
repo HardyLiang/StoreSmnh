@@ -1,36 +1,38 @@
+<import src="../template/couponScroll/couponScroll.wxml" />
+<import src="../template/goodItemHot/goodItemHot.wxml" />
+<import src="../template/goodItemVertical/goodItemVertical.wxml" />
 <view class='common-bg'>
-<view class='head-background'>
-   <view class='sm-store-content'>
-    <view class='sm-store-head'>
-      <image src='{{storeUrl}}' mode="aspectFill"></image>
+  <view class='head-background'>
+    <view class='sm-store-content'>
+      <view class='sm-store-head'>
+        <image src='{{storeUrl}}' mode="aspectFill"></image>
+      </view>
+      <view class='sm-store-info'>
+        <text class='sm-store-name'>{{storeName}}</text>
+        <text class='sm-store-intr'>{{storeContent}}</text>
+      </view>
+      <view class='sm-search'></view>
     </view>
-    <view class='sm-store-info'>
-      <text class='sm-store-name'>{{storeName}}</text>
-      <text class='sm-store-intr'>{{storeContent}}</text>
+    <view class='head-banner-img'>
+      <image src="" class="sm-banner-image" />
     </view>
-    <view class='sm-search'></view>
   </view>
-  <view class='head-banner-img'>
-     <image src="" class="sm-banner-image"  />
+  <!-- 优惠券start -->
+  <view class='m-home-container' hiddle="{{isHideCoupons}}">
+    <scroll-view class="scroll-view_H" scroll-x="true" bindscroll="scroll">
+      <template is="couponScrollTemplate" />
+    </scroll-view>
   </view>
-</view>
-<view class='m-home-container' hiddle="{{isHideCoupons}}">
-  <view></view>
-    <scroll-view class="scroll-view_H" scroll-x="true" bindscroll="scroll" >
-          <view id="demo1" class="scroll-view-item">
-              
-          </view>
-          <view id="demo2"  class="scroll-view-item demo-text-2"></view>
-          <view id="demo3" class="scroll-view-item demo-text-3"></view>
-          <view id="demo4"  class="scroll-view-item demo-text-2"></view>
-          <view id="demo5" class="scroll-view-item demo-text-3"></view>
-        </scroll-view>
-</view>
+  <!-- end -->
+  <!-- 热卖产品start -->
+  <view class='m-hot-container' hiddle="{{isHideCoupons}}">
+    <template is="hotProductTemplate" />
+  </view>
+  <!-- end -->
   <view class='sm-like'>
     <view class='sm-like-title'>{{}}</view>
-    <view class='sm-wrap-list' wx:for="{{hotGoodsList}}" wx:key="item"
-    wx:index="index">
-      <view class='sm-wrap-item'>
+    <view class='sm-wrap-list'>
+      <view class='sm-wrap-item' wx:for="{{hotGoodsList}}" wx:key="item" wx:index="index">
         <navigator>
           <view class='sm-wrap-img' style='height:{{imgHeight}}px'>
             <image src="{{item.goods_main_photo}}"></image>
