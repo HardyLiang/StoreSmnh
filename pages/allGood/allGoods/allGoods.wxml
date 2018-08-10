@@ -1,2 +1,6 @@
-<!--pages/allGood/allGoods/allGoods.wxml-->
-<text>pages/allGood/allGoods/allGoods.wxml</text>
+<view class='common-bg'>
+ <view class='search-box'><text class='all-search-text'>搜寻您想要的商品</text><text class='search-icon-green'></text></view>
+ <view class='all-goodsBox'>
+    
+ </view>
+</view>

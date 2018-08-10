@@ -1,0 +1,78 @@
+@import "../../style/common.wxss";
+@import "../../style/skinStyle1.wxss";
+.address-list-item {
+	margin-bottom: 20rpx;
+	background: #fff;
+	padding: 20rpx;
+}
+/*姓名与手机号码*/
+.address-list-item .header {
+	font-size: 36rpx;
+	color: #333;
+	line-height: 72rpx;
+}
+
+.address-list-item .header text {
+	margin-right: 40rpx;
+}
+
+.address-list-item .summary {
+	color: #333;
+	font-size: 32rpx;
+	line-height: 60rpx;
+  margin: 5px 0;
+}
+
+.address-list-item .footer {
+	border-top: 1px solid #e5e5e5;
+	font-size: 30rpx;
+	color: #6b6b6b;
+	padding-left: 10rpx;
+	padding-top: 10rpx;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+/*设为默认地址*/
+.set-default {
+	display: flex;
+	align-items: center;
+}
+
+.set-default text {
+	margin-left: 10rpx;
+}
+
+/*编辑与删除操作*/
+.address-list-item .footer .operation {
+	width: 300rpx;
+	display: flex;
+}
+
+.address-list-item .footer .operation .container {
+	display: flex;
+	align-items: center;
+  margin-left: 10rpx;
+}
+
+.address-list-item .footer .operation .container image {
+	width: 60rpx;
+	height: 60rpx;
+}
+
+.address-list-item .footer .operation .container text {
+	margin-left: 10rpx;
+}
+
+/*地址列表包装容器*/
+.address-list {
+	margin-bottom: 56px;
+}
+
+/*添加地址按钮*/
+.address-add {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}

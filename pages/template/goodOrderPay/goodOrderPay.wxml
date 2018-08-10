@@ -1,0 +1,12 @@
+<template name="goodOrderPay">
+ <view class="pay-goods-item">
+        <view class='pay-goods-left'>
+          <image src='../../../images/head.jpg' class='pay-goods-img'></image>
+        </view>
+        <view class='pay-goods-right'>
+          <view class='pay-goods-rig-name text-oneLine'>这里是标题这里是标题这里是标题这里是标题这里是标题这里是标题这里是标题</view>
+          <text class='pay-goods-new-price'>99.9</text>
+          <view class='pay-goods-num'>x1</view>
+        </view>
+        </view> 
+</template>

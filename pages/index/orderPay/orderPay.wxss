@@ -1,0 +1,101 @@
+@import "../../style/common.wxss";
+@import "../../style/skinStyle1.wxss";
+.common-bg{
+  padding-bottom: 80px;
+}
+
+
+.pay-trans {
+  background: #fff;
+  margin: 5px auto;
+  padding: 10rpx 20rpx;
+}
+
+.pay-m-total {
+  font-size: 32rpx;
+  line-height: 70rpx;
+  float: right;
+  margin-right: 20rpx;
+}
+
+.pay-left-text {
+  font-size: 32rpx;
+  line-height: 80rpx;
+}
+
+.pay-left-text2 {
+  font-size: 32rpx;
+  line-height: 78rpx;
+  color: #6b6b6b;
+  margin-left: 10px;
+}
+
+.pay-info-container {
+  background: #fff;
+  padding: 0 20rpx;
+}
+
+.pay-info-item {
+  padding: 16rpx 0;
+  /* border-bottom: 1px solid #e5e5e5; */
+  display: flex;
+}
+
+.input-left-label {
+  display: block;
+  font-size: 32rpx;
+  color: #333;
+  line-height: 60rpx;
+  margin-right: 20rpx;
+}
+
+.input-left-content {
+  margin-top: 6rpx;
+  min-height: 40rpx;
+  color: #333;
+  flex: 1;
+  font-size: 32rpx;
+}
+
+.pay-input-style {
+  line-height: 80rpx;
+}
+
+.pay-total-content {
+  background: #fff;
+  margin: 5px auto;
+  padding: 10rpx 20rpx;
+}
+
+.pay-left-price {
+  float: right;
+  color: #fe4543;
+  line-height: 70rpx;
+}
+/*底部按钮*/
+.pay-footer {
+	width: 100%;
+	height: 88rpx;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	position: fixed;
+	bottom: 0;
+	border-top: 1px solid #eee;
+	background: white;
+	z-index: 999;
+}
+.pay-all-total{
+   line-height: 88rpx;
+   color: #fe4543;
+   font-size: 32rpx;
+   margin: 0 10px;
+}
+.pay-btn{
+  line-height: 88rpx;
+  width: 260rpx;
+  background: #fe4543;
+  color: #fff;
+  text-align: center;
+  font-size: 36rpx;
+}

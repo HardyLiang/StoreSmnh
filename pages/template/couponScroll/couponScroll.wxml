@@ -1,12 +1,12 @@
 <template name="couponScrollTemplate">
-<view class="scroll-view-item">
-        <view class='cou-box'>
-          <view class='cou-money'>5</view>
-          <view class='cou-right'>
-            <text>优惠券</text>
-            <text>满200元使用</text>
-          </view>
-          <view class='cou-click'>点击领取>></view>
-        </view>
+  <view class="scroll-view-item">
+    <view class='cou-box'>
+      <view class='cou-money'>5</view>
+      <view class='cou-right'>
+        <text>优惠券</text>
+        <text>满200元使用</text>
       </view>
+      <view class='cou-click'>点击领取>></view>
+    </view>
+  </view>
 </template>

@@ -1,0 +1,29 @@
+/* 绿色边框按钮 */
+.address-add-btn{
+   width: 300rpx;
+   height: 80rpx;
+   border: 1px solid #0dc19c;
+   margin: 10px auto;
+   color: #0dc19c;
+   background: transparent;
+   font-size: 32rpx;
+   line-height: 80rpx;
+   border-radius: 3px;
+}
+.address-add-btn:after{
+  border: none;
+}
+.submit-btn{
+   width: 300rpx;
+   height: 80rpx;
+   border: 1px solid #0dc19c;
+   margin: 10px auto;
+   color: #fff;
+   background: #0dc19c;
+   font-size: 32rpx;
+   line-height: 80rpx;
+   border-radius: 3px;
+}
+.submit-btn:after{
+  border: none;
+}

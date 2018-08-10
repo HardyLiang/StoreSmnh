@@ -1,1 +1,28 @@
-/* pages/allGood/allGoods/allGoods.wxss */
+@import "../../style/common.wxss";
+@import "../../style/skinStyle1.wxss";
+.common-bg{
+  padding-top: 10px;
+  padding-bottom: 100rpx;
+}
+.search-box{
+  margin: 0 30rpx 10px;
+  background: rgba(255,255,255,.5);
+  border-radius: 20px;
+  height: 36px;
+  border: 1px solid #0dc19c;
+  text-align: center;
+}
+.all-search-text{
+  line-height: 36px;
+  color: #333;
+  font-size: 30rpx;
+}
+.search-icon-green{
+  display: block;
+  width: 28px;
+  height: 28px;
+  background: #fff;
+  float: right;
+  margin-right: 10px;
+  margin-top: 3px;
+}

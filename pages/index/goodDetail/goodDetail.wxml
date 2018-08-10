@@ -1,0 +1,30 @@
+<view class='common-bg'>
+  <view class='detailImg-container' style="height:{{ImgHeight}}px">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="swiper-style" indicator-color="rgba(255, 255, 255, .3)" indicator-active-color="#fff">
+      <block wx:for="{{imgUrls}}" wx:key="{{item}}" wx:for-index="ids">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" mode='aspectFill' />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class='detail-container detail-info'>
+    <view class='goodsDetail-name text-twoLine'>这里是商品名称撒打飞机啊看这里是商品名称撒打飞机啊看手机这里是商品名称撒打飞机啊看手机手机</view>
+    <text class='goods-new-price'>100</text>
+    <text class='goods-old-price'>50</text>
+  </view>
+  <view class='detail-container detail-address-choose'>
+    <view class='goodsDetail-addr'> 送至：广东省广州市 </view>
+    <view class="navigator-arrow"></view>
+  </view>
+  <view class='detail-container '>
+    <view class='goodsDetail-addr'> 送至：广东省广州市 </view>
+  </view>
+</view>
+
+<view class='detail-footer'>
+  <view class='d-icon-contact'>客服</view>
+  <view class='d-in-cart'>购物车</view>
+  <view class='d-add-cart'>加入购物车</view>
+  <view class='d-buy-now'>立即购买</view>
+</view>

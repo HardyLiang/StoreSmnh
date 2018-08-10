@@ -1,0 +1,74 @@
+<import src="../../template/goodOrderPay/goodOrderPay.wxml" />
+<view class='common-bg'>
+  <view class='pay-address-box'>
+    <view class='icon-pay-addr'></view>
+    <!-- <view class='address-none'>点击添加收货地址</view> -->
+    <view class='pay-address-has'>
+      <text class='addr-name'>这个是姓名</text>
+      <text class='addr-tel'>18387678656</text>
+      <text class='addr-detail'>广东省广州市水电费看啦手机的发卡说的放假奥斯卡</text>
+    </view>
+    <view class="navigator-arrow"></view>
+  </view>
+  <!-- 商品start -->
+  <view class='pay-goods'>
+    <view class='pay-order-num'>订单号：34543453534533</view>
+    <view class='pay-goods-list'>
+      <template is="goodOrderPay" />
+    </view>
+    <view class='pay-m-total'> 共 8件 总计：￥ 80 元</view>
+  </view>
+  <!-- end -->
+  <view class='pay-trans'>
+    <text class='pay-left-text'>配送方式</text>
+    <text class='pay-left-text2'>快递配送</text>
+  </view>
+  <!-- start -->
+  <view class='pay-info-container'>
+    <view class='pay-info-item'>
+      <view class='input-left-label'>优惠券</view>
+      <view class='input-left-content'>
+        <picker class="input-item-content arrow-btm" value="{{bankIndex}}" range="{{bank}}">
+          <view class="picker">
+            {{bank[bankIndex]}}
+          </view>
+        </picker>
+      </view>
+    </view>
+    <view class='pay-info-item'>
+      <view class='input-left-label'>运费</view>
+      <view class='input-left-content'>
+        <picker class="input-item-content arrow-btm" value="{{bankIndex}}" range="{{bank}}">
+          <view class="picker">
+            {{bank[bankIndex]}}
+          </view>
+        </picker>
+      </view>
+    </view>
+    <view class='pay-info-item'>
+      <view class='input-left-label'>选填:</view>
+      <view class='input-left-content'>
+        <input type="text" placeholder="给商家留言" value='{{nickName}}' name="nickName" class='pay-input-style'></input>
+      </view>
+    </view>
+  </view>
+  <!-- end -->
+  <view class='pay-total-content'>
+    <view class='tatal-item'>
+      <text class='pay-left-text'>商品金额</text>
+      <text class='pay-left-price'> ￥ 100</text>
+    </view>
+     <view class='tatal-item'>
+      <text class='pay-left-text'>优惠券</text>
+      <text class='pay-left-price'>-￥ 100</text>
+    </view>
+     <view class='tatal-item'>
+      <text class='pay-left-text'>运费</text>
+      <text class='pay-left-price'> -￥ 100</text>
+    </view>
+  </view>
+</view>
+<view class='pay-footer'>
+<view class='pay-all-total'>总计：￥1000</view>
+<view class='pay-btn'>支付</view>
+</view>

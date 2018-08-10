@@ -49,7 +49,6 @@ App({
   },
   globalData: {
     userInfo: null,
-    skinTheme: ''
   },
   func: {
     indexStore: http.indexStore,  

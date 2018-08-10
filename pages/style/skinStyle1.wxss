@@ -1,6 +1,6 @@
 .common-bg{
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   background: #ecfff8;
 }
 .head-background{
@@ -62,7 +62,7 @@
  border-radius: 6px;
  overflow: hidden;
  box-shadow: 0 2px 15px #ddd;
- background: red;
+ background: #eee;
 }
 .head-banner-img image{
   width: 100%;
@@ -165,7 +165,7 @@
 .hot-left{
   width: 268rpx;
   height: 268rpx;
-  background: red;
+  background: #eee;
 }
 .hot-img{
   width: 100%;
@@ -193,7 +193,7 @@
   font-size: 24rpx;
 }
 .hot-old-price{
-  color: #666;
+  color: #6b6b6b;
   font-size: 24rpx;
   text-decoration: line-through;
 }
@@ -227,18 +227,25 @@
 .sm-wrap-list .sm-wrap-item {
   display: block;
   float: left;
-  width: 50%;
+  width: 48.5%;
    position: relative;
   border-radius: 5px;
-  background: #fff;
-  box-shadow: 0 3px 15px #ddd;
+  background: rgba(255, 255, 255, .6);
   overflow: hidden; 
+  margin: 10rpx auto;
+}
+.sm-wrap-list .sm-wrap-item:nth-child(2n+1) {
+  margin-right: 1.5%;
+}
+.sm-wrap-list .sm-wrap-item:nth-child(2n) {
+  margin-left: 1.5%;
 }
 
 
 .sm-wrap-img {
-  width: 100%;
-  height: 320rpx;
+  width: 288rpx;
+  height: 288rpx;
+  margin: 20rpx auto;
 }
 
 .sm-wrap-img image {
@@ -263,7 +270,7 @@
   display: inline-block;
   font-size: 34rpx;
   font-weight: bold;
-  color: #ff3529;
+  color: #fa8a00;
   line-height: 28px;
 }
 
@@ -276,7 +283,7 @@
   padding: 2rpx 5rpx;
   font-size: 18rpx;
   border-radius: 2px;
-  color: #ff3529;
+  color: #ff5757;
   margin-left: 5px;
   vertical-align: middle;
   position: relative;
@@ -284,7 +291,7 @@
 
 .sm-sign:after {
   content: '';
-  border: 1px solid #ff3529;
+  border: 1px solid #ff5757;
   position: absolute;
   top: -50%;
   bottom: -50%;
@@ -294,4 +301,111 @@
   transform: scale(0.5);
   -webkit-border-radius: 4px;
   border-radius: 4px;
+}
+.pay-address-box {
+  display: flex;
+  padding: 20rpx;
+  min-height: 110rpx;
+  background: #fff;
+  border-bottom: 1px dotted #333;
+}
+
+.icon-pay-addr {
+  width: 64rpx;
+  height: 64rpx;
+  margin-top: 22rpx;
+  margin-right: 10rpx;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAb1BMVEUAAAD6cwD6cwD6cwD6cwD6cwD6cwD6cwD6cwD6cwD6cwD6cwD6cwD6cwD6cwD6cwD6cwD6cwD6cwD6cwD6cwD6cwD6cwD6cwD6cwD6cwD6cwD6cwD6cwD6cwD6cwD6cwD6cwD6cwD6cwD6cwD6cwAR/ZB7AAAAJHRSTlMABxrq9t4tDe/LoWc+10mJblgf+rGPgzUkqndhv5l90cS3VDcc/7u/AAAByklEQVRYw+2W25KiMBRFAwkBAghCi/dbz/r/bxzL9qTL0akEn1lPccdzkr3rxFLNzMyEyPfubMCc3TL/oHzjDB5z7CeWJ+MA2lW1tXXlCjCnZEp9WkKz9CXJsoEynXD9jGH3dGLSGbr48zP0n39F26bR/i9o+3ZD1AA7hvrtRssuyoDh9H6nw8TYaMmS/3jLaCMSKNj/fqirqv5tt0eHp2GB8V+qNICu/HAbFsEGK7ayPMJQlgMcRdlGeLhQyfmwym/HrvBSxyXYQFM//Gs5rvXWa3SwAWwkjCKRXMW6xUQ06GWevkT7kgnqIcLC+mcx4kRzjD+LdYSFkk4yLL0mKXY3LcTI9fGmYS3nSi5XxmADC6k4z/q78UzSSMGqCA+rR2Kaol0s2gLdy5CVKszSvzmbcSez/p0uVZikwcmyO2h96ORtOBpZBp4T9Tu9JvyUfHr5q5o3kmWQtMC9qkeK6J/VPa9pfcNeRbOl2DwrfcFWxZNnNPmTcJZcIrGGa/J0JWPVJJawUp5RQpnACTpZV3BSk3Hw7SfLqekkB4b75NWGQ6I+IC8xtVLrgjJXH5E2FGuradJPquWPgiaT+s86BOrDLm73n5mZieAvIIQiOPeO4wwAAAAASUVORK5CYII=");
+  background-size: 100% 100%;
+}
+
+.address-none {
+  font-size: 32rpx;
+  color: #333;
+  flex: 1;
+  line-height: 110rpx;
+  padding-left: 10rpx;
+}
+
+.pay-address-has {
+  flex: 1;
+  font-size: 32rpx;
+  line-height: 46rpx;
+}
+
+.addr-name {
+  margin-right: 20px;
+}
+
+.addr-detail {
+  font-size: 30rpx;
+  display: block;
+  margin-right: 10px;
+}
+
+.pay-goods {
+  background: #fff;
+  overflow: hidden;
+}
+
+.pay-order-num {
+  line-height: 40px;
+  padding: 0 25rpx;
+  font-size: 32rpx;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.pay-goods-list {
+  width: 100%;
+}
+
+.pay-goods-item {
+  margin: 16rpx 20rpx;
+  display: flex;
+  position: relative;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 26rpx;
+  border-radius: 4px;
+}
+
+.pay-goods-left {
+  width: 150rpx;
+  height: 150rpx;
+  background: #eee;
+}
+
+.pay-goods-img {
+  width: 100%;
+  height: 100%;
+}
+
+.pay-goods-right {
+  margin-left: 20rpx;
+}
+
+.pay-goods-rig-name {
+  font-size: 32rpx;
+  color: #333;
+  line-height: 40rpx;
+  max-width: 460rpx;
+  height: 40rpx;
+}
+
+.pay-goods-new-price {
+  display: inline-block;
+  font-size: 18px;
+  color: #fa8a00;
+  margin-top: 50rpx;
+  margin-right: 15rpx;
+}
+
+.pay-goods-new-price:before {
+  content: '￥';
+  font-size: 24rpx;
+}
+
+.pay-goods-num {
+  position: absolute;
+  right: 25rpx;
+  bottom: 20rpx;
 }

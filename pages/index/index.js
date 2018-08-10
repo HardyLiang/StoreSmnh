@@ -14,6 +14,7 @@ Page({
     storeContent:"暂无描述",//店铺描述
     isHideCoupons:false,//是否隐藏优惠券层
     hotGoodsList:[],//
+    imgHeight:'',
 
   },
 
@@ -87,15 +88,16 @@ Page({
       }
       //热卖商品；
      
-      if(res.data!=null&&res.data.length>0&&res.data[2].data.length>0){
+      if(res.data!=null&&res.data.length>0&&res.data[3].data.length>0){
         console.log("有热卖商品")
         that.setData({
-          hotGoodsList: res.data[2].data
+          hotGoodsList: res.data[3].data
         })
       }else{
         console.log("没有热卖商品")
       }
     })
+    
   },
   getUserInfo: function(e) {
     console.log(e)

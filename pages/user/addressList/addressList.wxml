@@ -1,0 +1,30 @@
+<view class='common-bg'>
+<view class="address-list">
+	<view class="address-list-item" >
+		<!-- first row -->
+		<view class="header">
+			<text class="realname">这个是姓名</text>
+			<text class="mobile">164545645645</text>
+		</view>
+		<!-- second row -->
+		<view class="summary">广东省广州市 天河区</view>
+		<!-- third row -->
+		<view class="footer">
+			<!-- is default switch -->
+			<view class="set-default" data-index="{{index}}" bindtap="setDefault">
+				<!-- circle or success type -->
+        <checkbox type="checkbox"></checkbox>
+				<!-- <icon type="{{item.isDefault == true ? 'success_circle' : 'circle'}}"/> -->
+				<text>默认地址</text>
+			</view>
+			<!-- edit and delete button -->
+			<view class="operation">
+				<view class="container" data-index="{{index}}" bindtap="edit"><image src="../../../images/icon_edit.png" /><text>编辑</text></view>
+				<view class="container" data-index="{{index}}" bindtap="delete"><image src="../../../images/icon_delete.png" /><text>删除</text></view>
+			</view>
+		</view>
+	</view>
+ 
+</view>
+<button bindtap="add"   class="address-add-btn">+ 添加新地址</button>
+</view>

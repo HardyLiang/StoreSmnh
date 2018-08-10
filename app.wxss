@@ -9,7 +9,10 @@ page {
   overflow-x: hidden;
    -webkit-user-select: none;
     user-select: none;
+    color: #333;
 }
+.fl{float: left;}
+.fr{float: right;}
 .text-oneLine{
    overflow: hidden;
   white-space: nowrap;
@@ -33,7 +36,7 @@ checkbox .wx-checkbox-input {
 /* 选中后的 背景样式 */
 checkbox .wx-checkbox-input.wx-checkbox-input-checked {
   border: none;
-  background: #48c23d;
+  background: #0dc19c;
 }
 /* 选中后的 对勾样式  */
 checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
@@ -47,8 +50,8 @@ checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
   background: transparent;
   transform: translate(-50%, -50%) scale(1);
   -webkit-transform: translate(-50%, -50%) scale(1);
-  background-color: #48c23d;
-  border: 1rpx solid #48c23d;
+  background-color: #0dc19c;
+  border: 1rpx solid #0dc19c;
 }
 /* 向右箭头 */
 .navigator-arrow {

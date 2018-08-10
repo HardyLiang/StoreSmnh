@@ -1,13 +1,21 @@
 {
   "pages": [
+    "pages/user/orderDetail/orderDetail",
+    "pages/user/addressAdd/addressAdd",
+    "pages/user/addressList/addressList",
+    "pages/allGood/allGoods/allGoods",
+    "pages/index/orderPay/orderPay",
     "pages/index/index",
+    "pages/index/goodDetail/goodDetail",
     "pages/user/index/index",
     "pages/cart/cart",
     "pages/logs/logs",
-    "pages/allGood/allGoods/allGoods"
+    "pages/template/goodOrderPay/goodOrderPay",
+    "pages/user/order/order"
+   
   ],
   "window": {
-    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarBackgroundColor": "#f5f5f5",
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "实名农户",
     "backgroundColor": "#f5f5f5",

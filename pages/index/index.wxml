@@ -32,21 +32,24 @@
   <view class='sm-like'>
     <view class='sm-like-title'>{{}}</view>
     <view class='sm-wrap-list'>
-      <view class='sm-wrap-item' wx:for="{{hotGoodsList}}" wx:key="item" wx:index="index">
+     <block wx:for="{{hotGoodsList}}" wx:key="item"  wx:index="index">
+    <template is="goodItemVertical" data="{{...item,index:index}}" />
+    </block>
+      <!-- <view class='sm-wrap-item' wx:for="{{hotGoodsList}}" wx:key="item" wx:index="index">
         <navigator>
-          <view class='sm-wrap-img' style='height:{{imgHeight}}px'>
+          <view class='sm-wrap-img' >
             <image src="{{item.goods_main_photo}}"></image>
           </view>
           <text class='sm-wrap-title text-twoLine'>{{item.goods_name}}</text>
           <view class='sm-sumary'>
             <view class='sm-price'>
               <text>￥</text>{{item.goods_current_price}}</view>
-            <!-- <view class='sm-sale'>已售459件</view> -->
+
             <view class='sm-sign'>满减</view>
             <view class='sm-sign'>礼</view>
           </view>
         </navigator>
-      </view>
+      </view>  -->
     </view>
   </view>
 </view>

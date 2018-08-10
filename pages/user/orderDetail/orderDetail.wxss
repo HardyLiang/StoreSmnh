@@ -1,0 +1,42 @@
+@import "../../style/common.wxss";
+@import "../../style/skinStyle1.wxss";
+.order-d-status{
+  padding: 20rpx;
+  background: #0dc19c;
+  display: flex;
+}
+.order-d-status image{
+  display: inline-block;
+  width: 78rpx;
+  height: 78rpx;
+  background: #eee;
+}
+.order-d-status text{
+   color: #fff;
+   font-size: 32rpx;
+   line-height: 78rpx;
+   margin-left: 10px;
+}
+.cell-container{
+  padding: 10rpx 25rpx;
+
+}
+.cell-item{
+  margin: 16rpx 0;
+}
+.cell-item text:first-child{
+  color: #6b6b6b;
+  font-size: 13px;
+
+}
+.cell-item text:last-child{
+  color: #333;
+  font-size: 13px;
+  float: right;
+}
+.cell-item text.fs16{font-size: 16px;color: #333;}
+.cell-item text.red{font-size: 18px;color: #fe4543;}
+.cell-item text.red:before {
+  content: '￥';
+  font-size: 12px;
+}
